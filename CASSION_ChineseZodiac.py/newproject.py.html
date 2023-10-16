@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>newproject.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+.s3 { color: #0000ff;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+newproject.py</font>
+</center></td></tr></table>
+<pre><span class="s0">def </span>zodiac1(year):
+    animals = [<span class="s2">&quot;Monkey&quot;</span>, <span class="s2">&quot;Rooster&quot;</span>, <span class="s2">&quot;Dog&quot;</span>, <span class="s2">&quot;Pig&quot;</span>, <span class="s2">&quot;Rat&quot;</span>, <span class="s2">&quot;Ox&quot;</span>, <span class="s2">&quot;Tiger&quot;</span>, <span class="s2">&quot;Rabbit&quot;</span>, <span class="s2">&quot;Dragon&quot;</span>, <span class="s2">&quot;Snake&quot;</span>, <span class="s2">&quot;Horse&quot;</span>, <span class="s2">&quot;Sheep&quot;</span>]
+
+    <span class="s0">if </span>year &gt;= <span class="s3">1900</span>:
+        year2 = (year - <span class="s3">1900</span>) % <span class="s3">12</span>
+        <span class="s0">return </span>animals[year2]
+    <span class="s0">else</span>:
+        <span class="s0">return </span><span class="s2">&quot;Year should be 1900 or later.&quot;</span>
+
+year = int(input(<span class="s2">&quot;Enter a year: &quot;</span>))
+zodiac2 = zodiac1(year)
+
+<span class="s0">if </span>zodiac2 != <span class="s2">&quot;Year should be 1900 or later.&quot;</span>:
+    print(<span class="s2">f&quot;The Chinese zodiac sign for the year </span><span class="s0">{</span>year<span class="s0">} </span><span class="s2">is </span><span class="s0">{</span>zodiac2<span class="s0">}</span><span class="s2">.&quot;</span>)
+<span class="s0">else</span>:
+    print(zodiac2)
+</pre>
+</body>
+</html>
